@@ -61,5 +61,6 @@ flowchart LR
     C --> E["<b>Agent InsightX</b><br>Produce Market Report"]
     D --> E
 
-style A,B,C,D,E fill:#f9f,stroke:#333,stroke-width:4px
+classDef agentStyle fill:#f9f,stroke:#333,stroke-width:4px
+class A,B,C,D,E agentStyle
 '''
