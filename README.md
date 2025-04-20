@@ -35,7 +35,8 @@ The system is composed of five distinct agents, each responsible for a specific 
 
 The system follows a partially parallel workflow:
 
-<!-- ```mermaid
+<!-- 
+```mermaid
 flowchart LR
     A["<b>Agent ParseBot</b><br>Parse PDF for Entity Extraction"] e1@--> B["<b>Agent Clarifier</b><br>Return list of Entities for Human input"]
     B e2@--> C["<b>Agent PriceProbe</b><br>Use Yahoo Tool for Market Price using MCP"]
@@ -51,7 +52,8 @@ e5@{ animate: true }
 
 style A fill:#f9f,stroke:#333,stroke-width:4px
 style B fill:#f9f,stroke:#333,stroke-width:2px,color:black,font-weight:bold
-''' -->
+''' 
+-->
 
 ```mermaid
 flowchart LR
