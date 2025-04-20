@@ -44,5 +44,3 @@ flowchart LR
     D --> E
 
 '''
-<!-- classDef agentStyle fill:#f9f,stroke:#333,stroke-width:4px
-class A,B,C,D,E agentStyle -->
