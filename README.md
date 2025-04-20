@@ -37,6 +37,7 @@ The system follows a partially parallel workflow:
 
 ```mermaid
 flowchart LR
+    A["<b>Agent ParseBot</b><br>Parse PDF for Entity Extraction"] --> B["<b>Agent Clarifier</b><br>Return list of Entities for Human input"]
     B --> C["<b>Agent PriceProbe</b><br>Use Yahoo Tool for Market Price using MCP"]
     B --> D["<b>Agent DataSage</b><br>Product Market Report on History Data from Gemini LLM"]
     C --> E["<b>Agent InsightX</b><br>Produce Market Report"]
@@ -44,4 +45,4 @@ flowchart LR
 
 classDef agentStyle fill:#f9f,stroke:#333,stroke-width:4px
 class A,B,C,D,E agentStyle
-'''
+```
