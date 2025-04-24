@@ -2,6 +2,7 @@ from google.adk.agents import Agent
 from google.adk.agents.callback_context import CallbackContext
 
 from .prompts import return_instructions_ee
+from google.adk.tools import load_artifacts
 
 from google.adk.agents.callback_context import CallbackContext
 from google.genai import types
@@ -44,5 +45,5 @@ root_agent = Agent(
     name="entity_extractor_agent",
     instruction=return_instructions_ee(),
     # before_agent_callback=validate_if_file_is_uploaded,
-    tools=[]
+    tools=[load_artifacts]
 )
